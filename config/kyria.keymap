@@ -18,14 +18,14 @@
 
 		default_layer {
 // ---------------------------------------------------------------------------------------------------------------------------------
-// |  ESC  |  Q  |  W  |  E   |  R   |  T   |                                          	     |  Y   |  U    |  I    |  O   |   P   | BKSP |
-// |  TAB  |  A  |  S  |  D   |  F   |  G   |                                          	     |  H   |  J    |  K    |  L   |   ;   |   '  |
-// | SHIFT |  Z  |  X  |  C   |  V   |  B   | L SHIFT | L SHIFT | 	 | L SHIFT | L SHIFT |  N   |  M    |  ,    |  .   |   /   | ENTER|
-//                     | CTRL  | WIN  | ALT |  SPACE  |  SPACE  |  	 |   RET   |  SPACE  | ALT  |  WIN  | R-CRTL|
+// |  ESC  |  Q  |  W  |  E   |  R   |  T   |                                          	     |  Y   |  U    |  I    |  O   |   P   | BKSP  |
+// |  TAB  |  A  |  S  |  D   |  F   |  G   |                                          	     |  H   |  J    |  K    |  L   |   '   | ENTER |
+// | SHIFT |  Z  |  X  |  C   |  V   |  B   | L SHIFT | L SHIFT | 	 | L SHIFT | L SHIFT |  N   |  M    |  ,    |  .   |   /   | RSHFT |
+//                     | CTRL  | WIN  | ALT |  SPACE  |  SPACE  |  	 |   RET   |  SPACE  | MO3  |  ALT  | R-CRTL|
 			bindings = <
-	&kp ESC   &kp Q &kp W &kp E &kp R &kp T                                                &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSLH
-	&kp TAB   &kp A &kp S &kp D &kp F &kp G                                                &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
-	&kp LSHFT &kp Z &kp X &kp C &kp V &kp B &kp LSHFT &kp LSHFT        &kp LSHFT &kp LSHFT &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RET
+	&kp ESC   &kp Q &kp W &kp E &kp R &kp T                                                &kp Y &kp U  &kp I     &kp O   &kp P    &kp BKSP
+	&kp TAB   &kp A &kp S &kp D &kp F &kp G                                                &kp H &kp J  &kp K     &kp L   &kp APOS &kp RET
+	&kp LSHFT &kp Z &kp X &kp C &kp V &kp B &kp LSHFT &kp LSHFT        &kp LSHFT &kp LSHFT &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHFT
 	                 &kp LCTRL &kp LGUI &kp LALT &lt ONE SPACE &kp SPACE        &kp RET  &lt TWO SPACE &mo THREE &kp RALT &kp RCTRL
 			>;
 
@@ -34,15 +34,15 @@
 		
 		second_layer {
 // ---------------------------------------------------------------------------------------------------------------------------------
-// |  ESC  |  Q  |  W  |  E   |  R   |  T   |                                          	     |  Y   |  U    |  I    |  O   |   P   | BKSP |
-// |  TAB  |  A  |  S  |  D   |  F   |  G   |                                          	     |  H   |  J    |  K    |  L   |   ;   |   '  |
-// | SHIFT |  Z  |  X  |  C   |  V   |  B   | L SHIFT | L SHIFT | 	 | L SHIFT | L SHIFT |  N   |  M    |  ,    |  .   |   /   | ENTER|
-//                     | CTRL  | WIN  | ALT |  SPACE  |  SPACE  |  	 |   RET   |  SPACE  | ALT  |  WIN  | R-CRTL|
+// |   -   |  1  |  2  |  3   |  4   |  5   |                                          	     |   6  |   7   |   8   |  9   |   0   |  DEL |
+// |   -   |  -  |  -  |  -   |  -   |  -   |                                          	     |  "-" |   4   |   5   |  6   |   ;   |   ]  |
+// |   -   |  -  |  -  |  -   |  -   |  -   |    -    |    -    | 	 |    -    |    -    |   +  |   1   |   2   |  3   |   -   |   -  |
+//                     |   -  |  -   |  -   |   M1    |    -    |  	 |    -    |    M2   |  MO3 |   -   |   -   |
 			bindings = <
-	&kp ESC   &kp F &kp W &kp E &kp R &kp T                                                &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSLH
-	&kp TAB   &kp A &kp S &kp D &kp F &kp G                                                &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
-	&kp LSHFT &kp Z &kp X &kp C &kp V &kp B &kp LSHFT &kp LSHFT        &kp LSHFT &kp LSHFT &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RET
-	                 &kp LCTRL &kp LGUI &kp LALT &lt ONE SPACE &kp SPACE        &kp RET  &lt TWO SPACE &mo THREE &kp RALT &kp RCTRL
+	&trans   &kp 1 &kp 2 &kp 3 &kp 4 &kp 5                                                &kp 6 &kp 7  &kp 8  &kp 9  &kp 0   &kp DEL
+	&trans   &trans &trans &trans &trans &trans                                          &kp SUBTRACT &kp 4  &kp 5  &kp 6  &kp SEMI &kp RBKT
+	&trans &trans &trans &trans &trans &trans &trans &trans        	       &trans &trans &kp KP_PLUS &kp 1  &kp 2 &kp 3 &trans &trans
+	                 &trans &trans &trans &lt ONE SPACE &trans        		&trans  &lt TWO SPACE &mo THREE &trans &trans
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -50,10 +50,10 @@
 
 		third_layer {
 // ---------------------------------------------------------------------------------------------------------------------------------
-// |  ESC  |  Q  |  W  |  E   |  R   |  T   |                                          	     |  Y   |  U    |  I    |  O   |   P   | BKSP |
-// |  TAB  |  A  |  S  |  D   |  F   |  G   |                                          	     |  H   |  J    |  K    |  L   |   ;   |   '  |
-// | SHIFT |  Z  |  X  |  C   |  V   |  B   | L SHIFT | L SHIFT | 	 | L SHIFT | L SHIFT |  N   |  M    |  ,    |  .   |   /   | ENTER|
-//                     | CTRL  | WIN  | ALT |  SPACE  |  SPACE  |  	 |   RET   |  SPACE  | ALT  |  WIN  | R-CRTL|
+// |   -   |  1  |  2  |  3   |  4   |  5   |                                          	     |   6  |   7   |   8   |  9   |   0   |  DEL |
+// |   -   |  -  |  -  |  -   |  -   |  -   |                                          	     |  "-" |   4   |   5   |  6   |   ;   |   ]  |
+// |   -   |  -  |  -  |  -   |  -   |  -   |    -    |    -    | 	 |    -    |    -    |   +  |   1   |   2   |  3   |   -   |   -  |
+//                     |   -  |  -   |  -   |   M1    |    -    |  	 |    -    |    M2   |  MO3 |   -   |   -   |
 			bindings = <
 	&kp ESC   &kp Q &kp F &kp E &kp R &kp T                                                &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSLH
 	&kp TAB   &kp A &kp S &kp D &kp F &kp G                                                &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
@@ -67,10 +67,10 @@
 		
 		third {
 // ---------------------------------------------------------------------------------------------------------------------------------
-// |  ESC  |  Q  |  W  |  E   |  R   |  T   |                                          	     |  Y   |  U    |  I    |  O   |   P   | BKSP |
-// |  TAB  |  A  |  S  |  D   |  F   |  G   |                                          	     |  H   |  J    |  K    |  L   |   ;   |   '  |
-// | SHIFT |  Z  |  X  |  C   |  V   |  B   | L SHIFT | L SHIFT | 	 | L SHIFT | L SHIFT |  N   |  M    |  ,    |  .   |   /   | ENTER|
-//                     | CTRL  | WIN  | ALT |  SPACE  |  SPACE  |  	 |   RET   |  SPACE  | ALT  |  WIN  | R-CRTL|
+// |   -   |  1  |  2  |  3   |  4   |  5   |                                          	     |   6  |   7   |   8   |  9   |   0   |  DEL |
+// |   -   |  -  |  -  |  -   |  -   |  -   |                                          	     |  "-" |   4   |   5   |  6   |   ;   |   ]  |
+// |   -   |  -  |  -  |  -   |  -   |  -   |    -    |    -    | 	 |    -    |    -    |   +  |   1   |   2   |  3   |   -   |   -  |
+//                     |   -  |  -   |  -   |   M1    |    -    |  	 |    -    |    M2   |  MO3 |   -   |   -   |
 			bindings = <
 	&kp ESC   &kp Q &kp W &kp F &kp R &kp T                                                &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSLH
 	&kp TAB   &kp A &kp S &kp D &kp F &kp G                                                &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
