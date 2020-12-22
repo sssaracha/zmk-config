@@ -55,7 +55,7 @@
 //                     |   -  |  -   |  -   |   M1    |    -    |       |    -    |    M2   |  MO3 |   -   |   -   |
 		    bindings = <
 	    &kp TILDE &kp EXCL &kp AT &kp POUND &kp DLLR &kp PRCNT                                  &kp CARET &kp AMPS  &kp STAR  &kp LPAR  &kp RPAR &kp DEL
-	    &trans &trans &kp C_PREV  &kp K_PP &kp K_NEXT &trans                                    &kp MINUS &trans  &trans  &trans  &kp MINUS &kp APOS
+	    &trans &trans &kp C_PREV  &kp C_PP &kp C_NEXT &trans                                    &kp MINUS &trans  &trans  &trans  &kp MINUS &kp APOS
 	    &trans &trans &trans &trans &trans &trans &trans &trans                   &trans &trans &kp EQUAL &trans &trans &trans &trans &trans
 	                 &trans &trans &trans &lt ONE SPACE &trans        		&trans  &lt TWO SPACE &mo THREE &trans &trans
 			>;
@@ -70,7 +70,7 @@
 //                     |   -  |  -   |  -   |   M1    |    -    |       |    -    |    M2   |  MO3 |   -   |   -   |
             bindings = <
     &kp TILDE &kp F1 &kp F2 &kp F3 &kp F4 &kp F5                                       &kp F6 &kp F7  &kp UP  &kp F10  &kp F11  &kp F12
-    &kp CAPS &trans &kp K_VOL_DN &kp K_PP &kp K_VOL_UP  &trans                         &kp F8 &kp LEFT  &kp DOWN  &kp RIGHT  &kp SEMI &kp BSLH
+    &kp CAPS &trans &kp C_VOL_DN &kp C_PP &kp C_VOL_UP  &trans                         &kp F8 &kp LEFT  &kp DOWN  &kp RIGHT  &kp SEMI &kp BSLH
     &trans &trans &trans &trans &trans &trans &trans &trans                   &trans &trans &kp F9 &trans  &trans &trans &trans &trans
                      &trans &trans &trans &lt ONE SPACE &trans                &trans  &lt TWO SPACE &mo THREE &trans &trans
 		    >;
