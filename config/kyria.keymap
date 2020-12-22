@@ -20,12 +20,12 @@
 		default_layer {
 // ---------------------------------------------------------------------------------------------------------------------------------
 // |  ESC  |  Q  |  W  |  E   |  R   |  T   |                                          	     |  Y   |  U    |  I    |  O   |   P   | BKSP  |
-// |  TAB  |  A  |  S  |  D   |  F   |  G   |                                          	     |  H   |  J    |  K    |  L   |   '   | ENTER |
+// |  TAB  |  A  |  S  |  D   |  F   |  G   |                                          	     |  H   |  J    |  K    |  L   |   ;   | ENTER |
 // | SHIFT |  Z  |  X  |  C   |  V   |  B   | L SHIFT | L SHIFT | 	 | L SHIFT | L SHIFT |  N   |  M    |  ,    |  .   |   /   | RSHFT |
 //                     | CTRL  | WIN  | ALT |  SPACE  |  SPACE  |  	 |   RET   |  SPACE  | MO3  |  BKSP | R-CRTL|
 			bindings = <
 	&kp ESC   &kp Q &kp W &kp E &kp R &kp T                                                &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
-	&kp TAB   &kp A &kp S &kp D &kp F &kp G                                                &kp H &kp J  &kp K     &kp L   &kp APOS &kp RET
+	&kp TAB   &kp A &kp S &kp D &kp F &kp G                                                &kp H &kp J  &kp K     &kp L   &kp SEMI &kp RET
 	&kp LSHFT &kp Z &kp X &kp C &kp V &kp B &kp LSHFT &kp LSHFT        &kp LSHFT &kp LSHFT &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHFT
 	                 &kp LCTRL &kp LGUI &kp LALT &lt ONE SPACE &kp SPACE        &kp RET  &lt TWO SPACE &mo THREE &kp BSPC &kp RCTRL
 			>;
@@ -39,7 +39,7 @@
 // |   -   |  -  |  -  |  -   |  -   |  -   |    -    |    -    | 	 |    -    |    -    |   +  |   1   |   2   |  3   |   -   |   -  |
 //                     |   -  |  -   |  -   |   M1    |    -    |  	 |    -    |    M2   |  MO3 |   -   |   -   |
 			bindings = <
-	&trans   &kp N1 &kp N2 &kp N3 &kp N4 &kp N5                                                &kp N6 &kp N7  &kp N8  &kp N9  &kp N0   &kp BSPC
+	&trans   &kp N1 &kp N2 &kp N3 &kp N4 &kp N5                                          &kp N6 &kp N7  &kp N8  &kp N9  &kp N0   &kp BSPC
 	&trans   &trans &trans &trans &trans &trans                                          &kp KP_SUBTRACT &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp SEMI &kp RBKT
 	&trans &trans &trans &trans &trans &trans &trans &trans        	       &trans &trans &kp KP_PLUS &kp KP_N1  &kp KP_N2 &kp KP_N3 &trans &trans
 	                 &trans &trans &trans &lt ONE SPACE &trans        		&trans  &lt TWO SPACE &mo THREE &trans &trans
@@ -50,13 +50,13 @@
         	third_layer {
 // ---------------------------------------------------------------------------------------------------------------------------------
 // | TILDE |  !  |  @  |  #   |  $   |  %   |                                               |   ^  |   &   |   *   |  (   |   )   |  DEL |
-// |   -   |  -  | prvs| play | next |  -   |                                               |  "-" |   -   |   -   |  -   |   :   |   -  |
-// |   -   |  -  |  -  |  -   |  -   |  -   |    -    |    -    |       |    -    |    -    |   +  |   -   |   -   |  -   |   -   |   -  |
+// |   -   |  -  | prvs| play | next |  -   |                                               |  "-" |   -   |   -   |  -   |  "-"  |   '  |
+// |   -   |  -  |  -  |  -   |  -   |  -   |    -    |    -    |       |    -    |    -    |   =  |   -   |   -   |  -   |   -   |   -  |
 //                     |   -  |  -   |  -   |   M1    |    -    |       |    -    |    M2   |  MO3 |   -   |   -   |
 		    bindings = <
-	    &kp TILDE &kp EXCL &kp AT &kp POUND &kp DLLR &kp PRCNT                                        &kp CARET &kp AMPS  &kp STAR  &kp LPAR  &kp RPAR &kp DEL
-	    &trans &trans &kp K_PREV  &kp K_PP &kp K_NEXT &trans                                    &kp KP_SUBTRACT &trans  &trans  &trans  &kp COLON &trans
-	    &trans &trans &trans &trans &trans &trans &trans &trans                   &trans &trans &kp KP_PLUS &trans &trans &trans &trans &trans
+	    &kp TILDE &kp EXCL &kp AT &kp POUND &kp DLLR &kp PRCNT                                  &kp CARET &kp AMPS  &kp STAR  &kp LPAR  &kp RPAR &kp DEL
+	    &trans &trans &kp C_PREV  &kp K_PP &kp K_NEXT &trans                                    &kp MINUS &trans  &trans  &trans  &kp MINUS &kp APOS
+	    &trans &trans &trans &trans &trans &trans &trans &trans                   &trans &trans &kp EQUAL &trans &trans &trans &trans &trans
 	                 &trans &trans &trans &lt ONE SPACE &trans        		&trans  &lt TWO SPACE &mo THREE &trans &trans
 			>;
 		};
@@ -64,12 +64,12 @@
 	
         	fourth_layer {
 // ---------------------------------------------------------------------------------------------------------------------------------
-// | TILDE |  F1 |  F2 |  F3  |  F4  |  F5  |                                                   |  F6  |   F7  |   UP  |  F10 |  F11  |  F12 |
-// | CAPS  |  -  | VOL-| PLAY | VOL+ |  -   |                                                   |  F8  |  LEFT |  DOWN | RIGHT|   ;   |   \  |
-// |   -   |  -  |  -  |   -  |  -   |  -   |    -    |    -    |      |    -    |    -    |  F9  |   -   |   -   |  -   |   -   |   -  |
+// | TILDE |  F1 |  F2 |  F3  |  F4  |  F5  |                                               |  F6  |   F7  |   UP  |  F10 |  F11  |  F12 |
+// | CAPS  |  -  | VOL-| PLAY | VOL+ |  -   |                                               |  F8  |  LEFT |  DOWN | RIGHT|   ;   |   \  |
+// |   -   |  -  |  -  |   -  |  -   |  -   |    -    |    -    |       |    -    |    -    |  F9  |   -   |   -   |  -   |   -   |   -  |
 //                     |   -  |  -   |  -   |   M1    |    -    |       |    -    |    M2   |  MO3 |   -   |   -   |
             bindings = <
-    &kp TILDE &kp F1 &kp F2 &kp F3 &kp F4 &kp F5                                         &kp F6 &kp F7  &kp UP  &kp F10  &kp F11  &kp F12
+    &kp TILDE &kp F1 &kp F2 &kp F3 &kp F4 &kp F5                                       &kp F6 &kp F7  &kp UP  &kp F10  &kp F11  &kp F12
     &kp CAPS &trans &kp K_VOL_DN &kp K_PP &kp K_VOL_UP  &trans                         &kp F8 &kp LEFT  &kp DOWN  &kp RIGHT  &kp SEMI &kp BSLH
     &trans &trans &trans &trans &trans &trans &trans &trans                   &trans &trans &kp F9 &trans  &trans &trans &trans &trans
                      &trans &trans &trans &lt ONE SPACE &trans                &trans  &lt TWO SPACE &mo THREE &trans &trans
