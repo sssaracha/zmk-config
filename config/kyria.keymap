@@ -28,8 +28,6 @@
 	&kp LSHFT &kp Z &kp X &kp C &kp V &kp B &kp LSHFT &kp LSHFT        &kp LSHFT &kp LSHFT &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHFT
 	                 &kp LCTRL &kp LGUI &kp LALT &lt ONE SPACE &kp SPACE        &kp RET  &lt TWO SPACE &mo THREE &kp RALT &kp RCTRL
 			>;
-
-			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
 		};
 		
 		second_layer {
@@ -44,41 +42,8 @@
 	&trans &trans &trans &trans &trans &trans &trans &trans        	       &trans &trans &kp KP_PLUS &kp 1  &kp 2 &kp 3 &trans &trans
 	                 &trans &trans &trans &lt ONE SPACE &trans        		&trans  &lt TWO SPACE &mo THREE &trans &trans
 			>;
-
-			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
 		};
+	
 
-		third_layer {
-// ---------------------------------------------------------------------------------------------------------------------------------
-// |   ~   |  !  |  @  |  #   |  $   |  %   |                                          	     |   ^  |   &   |   *   |  (   |   )   |   -  |
-// |   -   |  -  |  -  |  -   |  -   |  -   |                                          	     |  "-" |   -   |   -   |  -   |   -   |   -  |
-// |   -   |  -  |  -  |  -   |  -   |  -   |    -    |    -    | 	 |    -    |    -    |   +  |   -   |   -   |  -   |   -   |   -  |
-//                     |   -  |  -   |  -   |   M1    |    -    |  	 |    -    |    M2   |  MO3 |   -   |   -   |
-			bindings = <
-	&trans   &kp 1 &kp 2 &kp 3 &kp 4 &kp 5                                                &kp 6 &kp 7  &kp 8  &kp 9  &kp 0   &kp DEL
-	&trans   &trans &trans &trans &trans &trans                                          &trans &trans  &trans  &trans  &trans &trans
-	&trans &trans &trans &trans &trans &trans &trans &trans        	       &trans &trans &kp &trans &trans  &trans &trans &trans &trans
-	                 &trans &trans &trans &lt ONE SPACE &trans        		&trans  &lt TWO SPACE &mo THREE &trans &trans
-			>;
-
-			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
-		};
-		
-		
-		fourth_layer {
-// ---------------------------------------------------------------------------------------------------------------------------------
-// |   -   |  1  |  2  |  3   |  4   |  5   |                                          	     |   6  |   7   |   8   |  9   |   0   |  DEL |
-// |   -   |  -  |  -  |  -   |  -   |  -   |                                          	     |  "-" |   4   |   5   |  6   |   ;   |   ]  |
-// |   -   |  -  |  -  |  -   |  -   |  -   |    -    |    -    | 	 |    -    |    -    |   +  |   1   |   2   |  3   |   -   |   -  |
-//                     |   -  |  -   |  -   |   M1    |    -    |  	 |    -    |    M2   |  MO3 |   -   |   -   |
-			bindings = <
-	&trans   &kp 1 &kp 2 &kp 3 &kp 4 &kp 5                                                &kp 6 &kp 7  &kp 8  &kp 9  &kp 0   &kp DEL
-	&trans   &trans &trans &trans &trans &trans                                          &trans &trans  &trans  &trans  &trans &trans
-	&trans &trans &trans &trans &trans &trans &trans &trans        	       &trans &trans &kp &trans &trans  &trans &trans &trans &trans
-	                 &trans &trans &trans &lt ONE SPACE &trans        		&trans  &lt TWO SPACE &mo THREE &trans &trans
-			>;
-
-			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
-		};
 	};
 };
