@@ -22,12 +22,12 @@
 // |  ESC  |  Q  |  W  |  E   |  R   |  T   |                                          	     |  Y   |  U    |  I    |  O   |   P   | BKSP  |
 // |  TAB  |  A  |  S  |  D   |  F   |  G   |                                          	     |  H   |  J    |  K    |  L   |   '   | ENTER |
 // | SHIFT |  Z  |  X  |  C   |  V   |  B   | L SHIFT | L SHIFT | 	 | L SHIFT | L SHIFT |  N   |  M    |  ,    |  .   |   /   | RSHFT |
-//                     | CTRL  | WIN  | ALT |  SPACE  |  SPACE  |  	 |   RET   |  SPACE  | MO3  |  ALT  | R-CRTL|
+//                     | CTRL  | WIN  | ALT |  SPACE  |  SPACE  |  	 |   RET   |  SPACE  | MO3  |  BKSP | R-CRTL|
 			bindings = <
 	&kp ESC   &kp Q &kp W &kp E &kp R &kp T                                                &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
 	&kp TAB   &kp A &kp S &kp D &kp F &kp G                                                &kp H &kp J  &kp K     &kp L   &kp APOS &kp RET
 	&kp LSHFT &kp Z &kp X &kp C &kp V &kp B &kp LSHFT &kp LSHFT        &kp LSHFT &kp LSHFT &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHFT
-	                 &kp LCTRL &kp LGUI &kp LALT &lt ONE SPACE &kp SPACE        &kp RET  &lt TWO SPACE &mo THREE &kp RALT &kp RCTRL
+	                 &kp LCTRL &kp LGUI &kp LALT &lt ONE SPACE &kp SPACE        &kp RET  &lt TWO SPACE &mo THREE &kp BSPC &kp RCTRL
 			>;
 		};
 	
