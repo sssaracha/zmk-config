@@ -47,10 +47,19 @@
 		};
 	
 	
-
-		
-		
-
+        	third_layer {
+// ---------------------------------------------------------------------------------------------------------------------------------
+// | TILDE |  !  |  @  |  #   |  $   |  %   |                                               |   ^  |   &   |   *   |  (   |   )   |  DEL |
+// |   -   |  -  | prvs| play | next |  -   |                                               |  "-" |   -   |   -   |  -   |   :   |   -  |
+// |   -   |  -  |  -  |  -   |  -   |  -   |    -    |    -    |       |    -    |    -    |   +  |   -   |   -   |  -   |   -   |   -  |
+//                     |   -  |  -   |  -   |   M1    |    -    |       |    -    |    M2   |  MO3 |   -   |   -   |
+		    bindings = <
+	    &kp TILDE &kp EXCL &kp AT &kp POUND &kp DLLR &kp PRCNT                                        &kp CARET &kp AMPS  &kp STAR  &kp LPAR  &kp RPAR &kp DEL
+	    &trans &trans &kp K_PREV  &kp K_PP &kp K_NEXT &trans                                    &kp KP_SUBTRACT &trans  &trans  &trans  &kp COLON &trans
+	    &trans &trans &trans &trans &trans &trans &trans &trans                   &trans &trans &kp KP_PLUS &trans &trans &trans &trans &trans
+	                 &trans &trans &trans &lt ONE SPACE &trans        		&trans  &lt TWO SPACE &mo THREE &trans &trans
+			>;
+		};
 	
 	};
 };
