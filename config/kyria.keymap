@@ -19,12 +19,12 @@
 
 		default_layer {
 // ---------------------------------------------------------------------------------------------------------------------------------
-// |  ESC  |  Q  |  W  |  E   |  R   |  T   |                                          	     |  Y   |  U    |  I    |  O   |   P   | BKSP  |
+// |  btcl |  Q  |  W  |  E   |  R   |  T   |                                          	     |  Y   |  U    |  I    |  O   |   P   | btcl  |
 // |  TAB  |  A  |  S  |  D   |  F   |  G   |                                          	     |  H   |  J    |  K    |  L   |   ;   | ENTER |
 // | SHIFT |  Z  |  X  |  C   |  V   |  B   | L SHIFT | L SHIFT | 	 | L SHIFT | L SHIFT |  N   |  M    |  ,    |  .   |   /   | RSHFT |
 //                     | CTRL  | WIN  | ALT |  SPACE  |  SPACE  |  	 |   RET   |  SPACE  | MO3  |  BKSP | R-CRTL|
 			bindings = <
-	&kp ESC   &kp Q &kp W &kp E &kp R &kp T                                                &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
+	&bt BT_CLR   &kp Q &kp W &kp E &kp R &kp T                                                &kp Y &kp U  &kp I     &kp O   &kp P    &bt BT_CLR
 	&kp TAB   &kp A &kp S &kp D &kp F &kp G                                                &kp H &kp J  &kp K     &kp L   &kp SEMI &kp RET
 	&kp LSHFT &kp Z &kp X &kp C &kp V &kp B &kp LSHFT &kp LSHFT        &kp LSHFT &kp LSHFT &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHFT
 	                 &kp LCTRL &kp LGUI &kp LALT &lt ONE SPACE &kp SPACE        &kp RET  &lt TWO SPACE &kp BSPC &mo THREE &kp RCTRL
